@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+    <title>Document</title>
+</head>
+
+<body onload= "bulidTable()">
+ <div class="container  mt-5" >  
+    <h3 class="mb-3 fs-3">Student List</h3>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="input1"  required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="input5"  required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername"  class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="input3" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid Email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip03" class="form-label">Phonenumber</label>
+          <input type="number" class="form-control" id="input4" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+       
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip05" class="form-label">Age</label>
+          <input type="number" class="form-control" id="input2" required>
+          <div class="invalid-tooltip">
+            Please provide a valid phonenumber.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary"  id="demo" type="submit">Submit form</button>
+        </div>
+      </form>
+<!-- Fist Name:<br>
+<input  type =text id="input1"></input><br>
+<br>
+Last Name:<br>
+<input  type =text id="input5"></input><br>
+<br>
+Age:   <br>   
+<input type="number"id="input2"></input><br>
+<br>
+Email:<br>    
+<input  type =text id="input3" for="email"></input><br>
+<br>
+Phonenumber:<br>
+ <input type="number"id="input4" for=phonenumber></input><br>
+ -->
+
+
+<!-- <button id="demo" class="px-5 mt-3" type="submit">submit</button> -->
+<table class="table mt-5  table-dark table-striped">
+
+    <tr>
+        
+      <td class="table-secondary text-white">Name</td>
+      <td class="table-secondary text-white">Last Name</td>
+      <td class="table-secondary text-white">Age</td>
+      <td class="table-secondary text-white">Email</td>
+      <td class="table-secondary text-white">Phonenumber</td>
+    </tr>
+    <tbody id="tabbody"></tbody>
+  </table> 
+
+    <script src="index.js"></script>
+</body>
+</html>
